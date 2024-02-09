@@ -147,7 +147,7 @@ export function ChatWindow(props: {
               </svg>
               <span className="sr-only">Loading...</span>
             </div>
-            <span className={(chatEndpointIsLoading || intermediateStepsLoading) ? "hidden" : ""}>Send</span>
+            <span className={(chatEndpointIsLoading || intermediateStepsLoading) ? "hidden" : ""}>Enviar</span>
           </button>
         </div>
       </form>
