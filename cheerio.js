@@ -11,7 +11,6 @@ async function fetchAndLoad(url) {
     )
     const docs = await loader.load()
 
-
     const text = docs[0].pageContent.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/\.(?=[a-zA-Z])/g, '. ');
 
     const response = await fetch("http://localhost:3000/api/retrieval/ingest", {
