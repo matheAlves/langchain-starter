@@ -16,6 +16,7 @@ export default function Home() {
       titleText="YoBot"
       placeholder="Faça uma pergunta..."
       emptyStateComponent={InfoCard}
+      showIngestForm={true}
     ></ChatWindow>
   );
 }

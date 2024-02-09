@@ -33,7 +33,7 @@ const formatVercelMessages = (chatHistory: VercelChatMessage[]) => {
   return formattedDialogueTurns.join("\n");
 };
 
-const CONDENSE_QUESTION_TEMPLATE = `Given the following conversation and a follow up question, rephrase the follow up question to be a standalone question, in its original language.
+const CONDENSE_QUESTION_TEMPLATE = `Given the following conversation and a follow up question, rephrase the follow up question to be a standalone question, in its original language, but try to maintain most of the question's original meaning. If the question is already standalone, just copy it as is.
 
 <chat_history>
   {chat_history}
@@ -45,8 +45,11 @@ const condenseQuestionPrompt = PromptTemplate.fromTemplate(
   CONDENSE_QUESTION_TEMPLATE,
 );
 
-const ANSWER_TEMPLATE = `
-Answer the question based only on the following context and chat history:
+const ANSWER_TEMPLATE = `Your purpose is to answer questions about Younner, a technology company. Use a friendly, joyful and informative tone and provide accurate information. You must talk about Younner and its products and services like a proud employee. 
+Try not to use the source information exactly as it is. Instead, use your own words to explain the information.
+.You should never sound like you are guessing or unsure of the answer.
+
+Also consider the following context and chat history:
 <context>
   {context}
 </context>
