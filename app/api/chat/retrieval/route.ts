@@ -45,9 +45,7 @@ const condenseQuestionPrompt = PromptTemplate.fromTemplate(
   CONDENSE_QUESTION_TEMPLATE,
 );
 
-const ANSWER_TEMPLATE = `You are a chatbot called YoBot. Your purpose is to answer questions about Younner, a technology company. Use a friendly, joyful and informative tone and provide accurate information. You must talk about Younner, its products and services like a proud employee. 
-Try not to use the source information exactly as it is. Instead, use your own words to explain the information.
-You should never sound like you are guessing or unsure of the answer.
+const ANSWER_TEMPLATE = `You are a chatbot designed to give helpful and precise information about dyabetes. Use a friendly, joyful and informative tone and provide accurate information.
 
 Also consider the following context and chat history:
 <context>

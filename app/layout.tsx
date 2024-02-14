@@ -13,23 +13,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>YoBot</title>
+        <title>Tô Aqui</title>
         <link rel="shortcut icon" href="/images/favicon.ico" />
         <meta
           name="description"
-          content="Conheça o YoBot. O ChatBot da Younner."
+          content="Conheça o Tô Aqui. O ChatBot da Younner."
         />
-        <meta property="og:title" content="YoBot" />
+        <meta property="og:title" content="Tô Aqui" />
         <meta
           property="og:description"
-          content="Conheça o YoBot. O ChatBot da Younner."
+          content="Conheça o Tô Aqui. O ChatBot da Younner."
         />
         <meta property="og:image" content="/images/og-image.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="YoBot" />
+        <meta name="twitter:title" content="Tô Aqui" />
         <meta
           name="twitter:description"
-          content="Conheça o YoBot. O ChatBot da Younner."
+          content="Conheça o Tô Aqui. O ChatBot da Younner."
         />
         <meta name="twitter:image" content="/images/og-image.png" />
       </head>

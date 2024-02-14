@@ -153,7 +153,7 @@ export function ChatWindow(props: {
       </form>
 
       <div className="flex-col w-full mb-4">
-        <p> Quer adicionar mais conhecimento ao YoBot? É só inserir no campo abaixo &#128071;</p>
+        <p> Quer adicionar mais conhecimento ao Tô Aqui? É só inserir no campo abaixo &#128071;</p>
         {ingestForm}
       </div>
       <ToastContainer />

@@ -16,16 +16,16 @@ export default function Home() {
         </g>
       </svg>
       <h1 className="text-3xl md:text-4xl mb-4">
-        YoBot
+        Tô Aqui
       </h1>
-      <p>Olá, eu sou o YoBot 🤖. Me pergunte qualquer coisa sobre a Younner!</p>
+      <p>Como você está?</p>
     </div>
   );
   return (
     <ChatWindow
       endpoint="api/chat/retrieval"
       emoji="🤖"
-      titleText="YoBot"
+      titleText="Tô Aqui"
       placeholder="Faça uma pergunta..."
       emptyStateComponent={InfoCard}
       showIngestForm={true}
